@@ -16,4 +16,11 @@ function sortingNames(){
 }
 
 sortingNames();
+
+let list = document.getElementById("band");
+touristSpots.forEach(band => {
+    let listItem = document.createElement('li');
+    listItem.textContent = band;
+    list.appendChild(listItem);
+});
 // console.log(touristSpots);
